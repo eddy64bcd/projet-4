@@ -1,0 +1,91 @@
+/*******Plat menu******/
+
+@keyframes plat {
+   0%{
+      opacity: 0;
+   }
+   25%{
+      opacity: 0.2;
+   }
+   50%{
+      opacity: 0.4;
+   }
+   75%{
+      opacity: 0.8;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+
+.entree{
+      animation-name: plat;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      }
+
+.plat{
+     animation-name: plat;
+     animation-duration: 3s;
+     animation-timing-function: linear;
+     animation-iteration-count: 1;
+     animation-direction: normal;
+     animation-fill-mode: none;
+     }
+
+.dessert{
+     animation-name: plat;
+     animation-duration: 5s;
+     animation-timing-function: linear;
+   }
+
+
+
+
+
+
+/*********Menu check*****/
+
+@keyframes check-in {
+   from{
+      transform: translateX(200px);
+   }
+   to{
+      transform: translateX(0px);
+   }
+}
+
+.choix__valid{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 70px;
+     height: 100%;
+     background-color: $tertiary-color;
+     border-radius: 0 15px 15px 0;
+     display: none;
+      .icone__check{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        color: $tertiary-color;
+        font-size: 14px;
+       }
+    }
+ 
+    .plat__choix:hover .choix__valid{
+       display: block;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       animation: check-in 1s;
+      }

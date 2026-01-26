@@ -1,0 +1,48 @@
+/* footpage */
+
+.footpage{
+    width: 375px;
+    height: 250px;
+    background-color: $bg-footer-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footpage__title{
+    display: flex;
+    height: 50px;
+      h4{
+        display: flex;
+        align-items: center;
+        height: 20%; 
+        font-family: "Shrikhand", serif;
+        letter-spacing: 1px;
+        margin-left: 20px;
+    }
+   }
+
+.footpage__list{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    .list__menu{
+       list-style-type: none;
+       padding-left: 0;
+       padding-left: 20px;
+    }
+   }
+
+.menu__text{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footpage__list i {
+    margin-right: 10px;
+    color: white;
+}
+
