@@ -2,7 +2,7 @@
 <html>
 <head>
    <title>ohmyfood</title>
-   <link rel="stylesheet" type="text/css" href="./style.css">
+   <link rel="stylesheet" type="text/css" href="./styles/styles2.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="homepage">
+<div class="homepage" id="content">
   <header>
   <section class="intro">  
     <div class="intro__logo">
@@ -26,7 +26,8 @@
            <div class="localisation__icone"><i class="fa-solid fa-location-dot"></i></div>
            <div class="localisation__ville"><input type="text" placeholder="Paris,Belleville"></div>
         </div>    
-      </div>
+    </div>
+  
     <div class="intro__title">
           <div class="title__primary"><h2>Réserver le menu qui vous convient</h2></div>
           <div class="title__secondary"><span>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</span></div>
@@ -36,7 +37,7 @@
 </header>
 <main>
   <section class="fonctionnement">
-      <div class="fonctionnement__title"><h3>Fonctionnement</h3></div>
+      <div class="fonctionnement__title"><h2>Fonctionnement</h2></div>
       <div class="fonctionnement__choix">
           <a class="choix__btn" href="#"> 
             <div class="btn__nbr">1</div>
@@ -61,11 +62,22 @@
         </a>
       </div>
   </section>
+     <div class="loader-container">
+    <div class="dot d1">o</div>
+    <div class="dot d2">h</div>
+    <div class="dot d3">m</div>
+    <div class="dot d4">y</div>
+    <div class="dot d5">f</div>
+    <div class="dot d7">o</div>
+    <div class="dot d8">o</div>
+    <div class="dot d9">d</div>
+  </div>
   <section class="restaurants">
-    <div class="restaurant__title"><h3>Restaurants</h3></div>
+   
+    <div class="restaurant__title"><h2>Restaurants</h2></div>
     <div class="restaurant__list">
       <div class="restaurant__card">
-       <a href="#"> 
+       <a href="./pages-restaurants/page2.html"> 
         <div class="card__img">
           <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo du restaurant La palette du goût">
           <label class="card__neo">Nouveau</label>
@@ -75,14 +87,17 @@
               <h4>La palette du goût</h4>
               <div class="card__lieu">Ménilmontant</div>
             </div>
-            <div class="card__icone"><img class="icone__heart" src="assets/icone/heart.png" alt="icone coeur"> </div>
+            <div class="card__icone">
+              <img class="icone__heart--white heart" src="assets/icone/heart-white.png" alt="icone coeur blanc"> 
+              <img class="icone__heart--color heart" src="assets/icone/heart-color.png" alt="icone coeur coloré"> 
+            </div>
         </div>
        </a>   
       </div>
       <div class="restaurant__card">
        <a href="#">
         <div class="card__img">
-          <img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"photo du restaurant La note enchantée">
+          <img src="assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo du restaurant La note enchantée">
           <label class="card__neo">Nouveau</label>
         </div>    
         <div class="card__text">    
@@ -90,7 +105,10 @@
               <h4>La note enchantée</h4>
               <div class="card__lieu">Charonne</div>
             </div>
-            <div class="card__icone"><img class="icone__heart" src="assets/icone/heart.png" alt="icone coeur"> </div>
+            <div class="card__icone">
+              <img class="icone__heart--white heart" src="assets/icone/heart-white.png" alt="icone coeur blanc"> 
+              <img class="icone__heart--color heart" src="assets/icone/heart-color.png" alt="icone coeur coloré"> 
+            </div>
         </div>
        </a>   
       </div>
@@ -105,7 +123,10 @@
               <h4>A la française</h4>
               <div class="card__lieu">Cité Rouge</div>
             </div>
-           <div class="card__icone"><img class="icone__heart" src="assets/icone/heart.png" alt="icone coeur"> </div>
+            <div class="card__icone">
+              <img class="icone__heart--white heart" src="assets/icone/heart-white.png" alt="icone coeur blanc"> 
+              <img class="icone__heart--color heart" src="assets/icone/heart-color.png" alt="icone coeur coloré"> 
+            </div>
         </div>
        </a>  
       </div>
@@ -120,7 +141,10 @@
               <h4>Le délice des sens</h4>
               <div class="card__lieu">Folie-Méricourt</div>
             </div>
-          <div class="card__icone"><img class="icone__heart" src="assets/icone/heart.png" alt="icone coeur"> </div>
+            <div class="card__icone">
+              <img class="icone__heart--white heart" src="assets/icone/heart-white.png" alt="icone coeur blanc"> 
+              <img class="icone__heart--color heart" src="assets/icone/heart-color.png" alt="icone coeur coloré"> 
+            </div>
         </div>
        </a>
       </div> 
@@ -137,7 +161,7 @@
         <li><a href="#" class="menu__text"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
         <li><a href="#" class="menu__text"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a></li>
         <li><a href="#" class="menu__text">Mentions légales</a></li>
-        <li><a href="#" class="menu__text">Contact</a></li>
+        <li><a href="#" class="menu__text"><div class="contact">Contact</div></a></li>
       </ul>
       </div>
 
