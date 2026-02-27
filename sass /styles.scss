@@ -6,7 +6,7 @@
 @import '_animations.scss';
 @import '_footpage.scss';
 @import '_header.scss';
-@import '_querys.scss';
+
 
 
 p{
@@ -14,11 +14,7 @@ p{
     padding: 0;
 }
 
-html{
-   background-color: white;
-   display: flex;
-   justify-content: center;
-}
+
 
 body{
     margin: 0;
@@ -209,10 +205,12 @@ body{
                   display: flex;
                   width: 10%;
                   align-items: end;
+                  justify-content: end;
                   margin-right: 5px;
                   height: 60px;
                   font-size: 16px;
                   font-weight: bold;
+                  transition: transform 0.5s;
              }
     
    }    
@@ -235,8 +233,9 @@ body{
     @include button-multi;
 }
 
-
-
+.footpage{
+@include footer-mobile-resto(); 
+}
 @media screen and (min-width: 768px) {
  /********Général*****/
  
@@ -247,7 +246,7 @@ body{
   }
   
   .container-restaurant {
-    width: 870px;
+    width: 100%;
     display: flex;
     }
   
@@ -274,84 +273,18 @@ body{
  
   /**********Footer********/
   .footpage{
-    flex-direction: row-reverse;
-    justify-content: end;
-    width: 100%;
-    height: 80px;
-    align-items: end;
-   
- }
- .footpage__title{
-    align-items: end;
-    width: 15%;
-    height: 100%;
-        h4{
-        display: flex;
-        align-items: end;
-        height: 100%; 
-        font-family: "Shrikhand", serif;
-         } letter-spacing: 1px;
- }
- .footpage__list{
-     width: 600px;
-     height: 100%;
-     justify-content: end;
-     .list__menu{
-        display: flex;
-        width: 100%;
-        height: 40%;
-        align-items: start;
-        flex-direction: row;
-        list-style-type: none;
-        padding:0;
-        margin: 0;
-        margin-bottom: 15px;
-       }a{
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        white-space: nowrap;
-        margin-left: 20px;
-       }
-}
-.footpage__list i {
-    display: flex;
-    width: 10%;
-    margin-bottom: 7px;
-    align-items: baseline;
-    justify-content: center;
-    color: white;
-}
-
-.menu__text {
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-
-}
-
+ @include footer-pc-resto();
+  }
 @media screen and (min-width: 1024px) {
-  .container-restaurant{
-    width: 1124px;}
-  .restaurant{
-    width: 80%;
-  }  
+ 
   }
 
 @media screen and (min-width:1400px){
-    .container-restaurant{
-        width: 1500px;
-    }
-   .restaurant{
-    width: 80%;
+  
    } 
+
+
 }
-
-
 
 
 
