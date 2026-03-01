@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 15%;
   height: 100%;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
@@ -243,6 +243,7 @@ body {
   background-color: white;
 }
 
+
 /*****restaurant page*****/
 .container-restaurant {
   position: relative;
@@ -425,6 +426,7 @@ body {
 .list__plat .title__plat {
   width: 70%;
   display: flex;
+  margin-left: 15px;
   min-width: 0;
   align-items: center;
   height: 25px;
@@ -432,7 +434,7 @@ body {
   white-space: nowrap;
 }
 .list__plat .title__plat h4 {
-  font-size: 13px;
+  font-size: 18px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -444,7 +446,9 @@ body {
   align-items: center;
 }
 .list__plat .text__plat p {
-  font-size: 12px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-left: 15px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -485,6 +489,11 @@ body {
   border-radius: 35px;
   text-decoration: none;
   box-shadow: 0 4 10 0 #000000;
+}
+
+.commander__button:hover{
+background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
+linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
 }
 
 .footpage {

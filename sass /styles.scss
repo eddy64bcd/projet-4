@@ -22,7 +22,7 @@ body{
     width: 100%;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-    background-color: white;
+    background-color: sasswhite;
 }
 
 /*****restaurant page*****/
@@ -126,6 +126,7 @@ body{
       
      }  h3{
           display: flex;
+          color: red;
           font-size: 16px;
           font-weight: 300;
           text-transform: uppercase;
@@ -176,7 +177,7 @@ body{
           }.title__plat{
            width: 70%;
            display: flex;
-           min-width: 0;
+        
            align-items: center;
            height: 25px;
            font-size: 18px;
@@ -192,7 +193,7 @@ body{
             .text__plat{
                 width: 80%;
                 display: flex;
-                min-width: 0;
+              
                 align-items: center;
                 p{
                    font-size: 12px;
@@ -230,7 +231,10 @@ body{
 }
 
 .commander__button{
-    @include button-multi;
+    @include button-multi();
+}
+.commander__button:hover{
+  @include button-multi-hover();
 }
 
 .footpage{
