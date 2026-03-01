@@ -426,7 +426,7 @@ body {
 .list__plat .title__plat {
   width: 70%;
   display: flex;
-  margin-left: 15px;
+  margin-left: 5px;
   min-width: 0;
   align-items: center;
   height: 25px;
@@ -448,7 +448,7 @@ body {
 .list__plat .text__plat p {
   font-size: 18px;
   letter-spacing: 0.5px;
-  margin-left: 15px;
+  margin-left: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
