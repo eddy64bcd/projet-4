@@ -719,9 +719,11 @@ body .footpage .footpage__list i {
     margin: 12px 3px 0px 0px;
   }
   body .footpage .footpage__list {
-
+    width: 600px;
     height: 100%;
     justify-content: end;
+    
+ 
   }
   body .footpage .footpage__list .list__menu {
     display: flex;
